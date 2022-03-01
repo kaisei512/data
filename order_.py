@@ -31,7 +31,7 @@ btn = driver.find_elements_by_class_name('text-symbol-label')
 #select = Select(element)
 btn[4].click()
 texts = driver.find_elements_by_class_name('form-control')
-# pre order
+# order
 texts[1].send_keys(75.34)
 texts[2].send_keys(80.43)
 texts[3].send_keys(74.12)
