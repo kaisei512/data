@@ -1,10 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
 # get exe file path
-driver = webdriver.Chrome('C:/Users/klay1/chromedriver')
+driver =   webdriver.Chrome(ChromeDriverManager().install())
 # get url
 driver.get('https://my.min-fx.tv/login?service=https%3A%2F%2Fmy.min-fx.tv%2Fmypage%2Fj_spring_cas_security_check%3Ftarget-path%3D%2Findex')
 # input ID,PASS

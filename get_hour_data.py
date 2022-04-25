@@ -1,9 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
+from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
 # get exe file path
-driver = webdriver.Chrome('C:/Users/klay1/chromedriver')
+driver =   webdriver.Chrome(ChromeDriverManager().install())
 # get url
 driver.get('https://sec.himawari-group.co.jp/report/chart/')
 # choice interval
